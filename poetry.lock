@@ -30,6 +30,20 @@ pycodestyle = ">=2.11.0,<2.12.0"
 pyflakes = ">=3.1.0,<3.2.0"
 
 [[package]]
+name = "kink"
+version = "0.6.6"
+description = "Dependency injection for python."
+optional = false
+python-versions = ">=3.7,<4.0"
+files = [
+    {file = "kink-0.6.6-py3-none-any.whl", hash = "sha256:02bb2b020d3933cea89d84fd110d5caeb5b250a5f722d4793d51c57bc443c5a1"},
+    {file = "kink-0.6.6.tar.gz", hash = "sha256:4b32ad6679f877a74eba4e94f448fa65f0152d358594936f253c064d947b4341"},
+]
+
+[package.dependencies]
+typing_extensions = ">=4.1.1,<5.0.0"
+
+[[package]]
 name = "mccabe"
 version = "0.7.0"
 description = "McCabe checker, plugin for flake8"
@@ -62,7 +76,18 @@ files = [
     {file = "pyflakes-3.1.0.tar.gz", hash = "sha256:a0aae034c444db0071aa077972ba4768d40c830d9539fd45bf4cd3f8f6992efc"},
 ]
 
+[[package]]
+name = "typing-extensions"
+version = "4.7.1"
+description = "Backported and Experimental Type Hints for Python 3.7+"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "typing_extensions-4.7.1-py3-none-any.whl", hash = "sha256:440d5dd3af93b060174bf433bccd69b0babc3b15b1a8dca43789fd7f61514b36"},
+    {file = "typing_extensions-4.7.1.tar.gz", hash = "sha256:b75ddc264f0ba5615db7ba217daeb99701ad295353c45f9e95963337ceeeffb2"},
+]
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "12e5b3013b47715c09ba499c6d6a91037c2bf75800cdbff580d742f2f61b44e0"
+content-hash = "b2dc5df19f9addec92ef3dbadf67f52d2c5a85b84ca1ae37746df39933d52449"

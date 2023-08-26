@@ -10,6 +10,7 @@ packages = [{include = "playground"}]
 python = "^3.10"
 asyncio = "^3.4.3"
 flake8 = "^6.1.0"
+kink = "^0.6.6"
 
 
 [build-system]
