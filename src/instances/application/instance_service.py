@@ -47,5 +47,3 @@ class InstanceService:
         
         instance.delete()
         await self._instance_repository.save(instance)
-
-        
