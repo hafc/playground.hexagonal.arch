@@ -2,14 +2,17 @@ import uuid
 from kink import inject
 from domain.repository.iinstance_repository import IInstanceRepository
 from domain.models.instance import Instance
+from domain.dto.instance_dto import CreateInstanceDto
+from application.iinstance_service import IInstanceService
+
 
 @inject
-class InstanceService:
+class InstanceService(IInstanceService):
     def __init__(self, instance_repository: IInstanceRepository) -> None:
         self._instance_repository = instance_repository
     
-    async def create(self, customer_id: uuid, flavor_id: uuid, name: str):
-        instance: Instance(uuid.uuid4(), customer_id, name, flavor_id)
+    async def create(self, create_instance: CreateInstanceDto):
+        instance: Instance(uuid.uuid4(), create_instance._customer_id, create_instance._name, create_instance._flavor_id)
         await self._instance_repository.save(instance)
     
     async def update_flavor(self, instance_id: uuid, flavor_id: uuid):
