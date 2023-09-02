@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from domain.dto.instance_dto import CreateInstanceDto
+from instances.domain.dto.instance_dto import CreateInstanceDto
 import uuid
 
 
