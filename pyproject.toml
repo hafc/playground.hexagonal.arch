@@ -12,6 +12,7 @@ asyncio = "^3.4.3"
 flake8 = "^6.1.0"
 kink = "^0.6.6"
 fastapi = "^0.103.0"
+uvicorn = "^0.23.2"
 
 
 [build-system]
